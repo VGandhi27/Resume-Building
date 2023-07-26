@@ -16,6 +16,14 @@ mongoose.connection.on('error',(err)=>{
     console.log("error connecting",err)
 })
 
+require('./models/User')
+require('./models/Info')
+
+
+app.use(express.json())
+app.use(require('./routes/Auth'))
+app.use(require('./routes/Post'))
+
 
 app.listen(PORT,()=>{
     console.log("Server is running on",PORT);
