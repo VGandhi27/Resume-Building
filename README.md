@@ -47,7 +47,7 @@ File a [bug report]() or [feature request]() using the [New Issues]() page.
 
 ## Core Contributors
 
-<a href="https://github.com/vgandhi27"><img src="" alt="sadanand" height="75px" width="75px" /></a>
+<a href="https://github.com/vgandhi27"><img src="https://github.com/vgandhi27.png" alt="vgandhi27" height="75px" width="75px" /></a>
 ## License
 
 This repository is [MIT licensed](./LICENSE).
