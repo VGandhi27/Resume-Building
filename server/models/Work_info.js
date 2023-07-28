@@ -24,4 +24,4 @@ const WorkSchema =new mongoose.Schema({
 
 })
 
-mongoose.model("work",workSchema)
+mongoose.model("Work",WorkSchema)

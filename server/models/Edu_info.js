@@ -11,19 +11,19 @@ const eduSchema =new mongoose.Schema({
     },
     study:{
         type:String,
-        default:"no photo"
+        required:true
     },
     desc:{
         type:String,
-        default:"no photo"
+        required:true
     },
     skill:{
-        type:ObjectId,
-        ref:"User"
+        type:String,
+        required:true
     },
     activities:{
-        type:ObjectId,
-        ref:"User"
+        type:String,
+        required:true
     }
 
 })

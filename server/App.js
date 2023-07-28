@@ -18,13 +18,15 @@ mongoose.connection.on('error',(err)=>{
 
 require('./models/User')
 require('./models/Per_Info')
+require('./models/Edu_info')
+require('./models/Work_info')
 
 
 app.use(express.json())
 app.use(require('./routes/Auth'))
-// app.use(require('./routes/Post'))
-// app.use(require('./routes/Work'))
-// app.use(require('./routes/Edu'))
+app.use(require('./routes/Post'))
+app.use(require('./routes/Work'))
+app.use(require('./routes/Edu'))
 // app.use(require('./routes/Pers'))
 
 
