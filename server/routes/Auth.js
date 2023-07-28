@@ -10,8 +10,8 @@ const { JWT_SECRET }=require("../Key")
 
 
 router.post('/signup',(req,res)=>{
-   const {name,email,password,phonenumber}=req.body
-   if(!email||!password||!name||!phonenumber){
+   const {name,email,password}=req.body
+   if(!email||!password||!name){
      return res.status(422).json({error:"Please add all the Credential"})
    }
  User.findOne({email:email})
@@ -26,8 +26,7 @@ router.post('/signup',(req,res)=>{
         const user=new User({
             email,
             password:hashedpassword,
-            name,
-            phonenumber
+            name
         })
         user.save()
         .then(user=>{
@@ -47,34 +46,33 @@ router.post('/signup',(req,res)=>{
  
 })
 
+
 router.post('/signin',(req,res)=>{
-   
-    const {email,password}=req.body
-    if(!email||!password){
-      return res.status(422).json({error:"Please add all the Credential"})
+    const {email,password} = req.body
+    if(!email || !password){
+       return res.status(422).json({error:"please add email or password"})
     }
-
     User.findOne({email:email})
-   .then((savedUser)=>{
-    if(!savedUser){
-        return res.status(422).json({error:"Invalid Email or Password"})
-    } 
-    bcrypt.compare(password,savedUser.password)
-    .then(doMatch=>{
-        if(doMatch){
-           // res.json({message:"Successfully Signed In"})
-          const token=jwt.sign({_id:savedUser._id },JWT_SECRET)
-          res.json({token})
-        
+    .then(savedUser=>{
+        if(!savedUser){
+           return res.status(422).json({error:"Invalid Email or password"})
         }
-        else{
-            return res.status(422).json({error:"Invalid Email or Password"})
-
-        }
+        bcrypt.compare(password,savedUser.password)
+        .then(doMatch=>{
+            if(doMatch){
+                // res.json({message:"successfully signed in"})
+               const token = jwt.sign({_id:savedUser._id},JWT_SECRET)
+               const {_id,name,email} = savedUser
+               res.json({token,user:{_id,name,emai}})
+            }
+            else{
+                return res.status(422).json({error:"Invalid Email or password"})
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
     })
-    .catch(err=>{
-        console.log(err)
-    })
-   })
 })
+
 module.exports=router
