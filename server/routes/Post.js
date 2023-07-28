@@ -2,7 +2,7 @@ const express =require('express')
 const router =express.Router()
 const mongoose=require('mongoose')
 const requireLogin=require("../middleware/requireLogin")
-const Post =mongoose.model("Info")
+const Post =mongoose.model("Per")
 
 router.post("/createpost",requireLogin,(req,res)=>{
 

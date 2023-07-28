@@ -1,23 +1,27 @@
 const mongoose=require('mongoose')
 const {ObjectId}=mongoose.Schema.Types
-const infoSchema =new mongoose.Schema({
+const WorkSchema =new mongoose.Schema({
     title:{
         type:String,
         required:true
     },
-    body:{
+    desc:{
         type:String,
         required:true
     },
-    photo:{
+    doj:{
         type:String,
         default:"no photo"
     },
-    postedBy:{
+    dor:{
+        type:String,
+        default:"no photo"
+    },
+    skill:{
         type:ObjectId,
         ref:"User"
     }
 
 })
 
-mongoose.model("Info",infoSchema)
+mongoose.model("work",workSchema)
