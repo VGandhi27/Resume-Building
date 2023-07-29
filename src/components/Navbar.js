@@ -44,12 +44,12 @@ const Navbar = () => {
           {/* <li>
           <Link to="/timelines"> Timelines </Link>
           </li> */}
-          {/* <li>
+          <li>
           <Link to="/blog"> <a href=""><FaGithub size={30} style={{color:"#fff"}} /></a> </Link>
           </li>
           <li>
           <Link to="/Login"> Login </Link>
-          </li> */}
+          </li>
           
         </ul>
        

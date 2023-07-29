@@ -13,14 +13,14 @@ const Navbar = () => {
     <>
     <div className="feature">
      <h1>FEATURE ON</h1>
-    <div className={"header2 header-bg"}>
+    <div className={"header2 header-bgas"}>
        
            <ul className={"nav-menu1 "} style={{fontSize:"1.2rem"}}>
         <li>
           <Link to="/"> <h2>TechCrunch</h2> </Link>
           </li>
           <li>
-          <Link to="/about"><h2>Fast Company</h2> </Link>
+          <Link to="/about"><h2>Fast </h2> </Link>
           </li>
           <li>
           <Link to="/project"> <h2>MIT</h2> </Link>
@@ -28,7 +28,12 @@ const Navbar = () => {
           <li>
           <Link to="/contact"> <h2>Forbes</h2> </Link>
           </li>
-         
+          <li>
+          <Link to="/project"> <h2>MIT</h2> </Link>
+          </li>
+          <li>
+          <Link to="/contact"> <h2>Forbes</h2> </Link>
+          </li>
           
         </ul>
       

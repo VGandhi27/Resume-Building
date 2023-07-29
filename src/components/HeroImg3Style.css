@@ -11,22 +11,22 @@
 
 }  
 
-.brief .left{
+.brief .left3{
     text-align: left;
     margin: auto;
     padding: 5rem;
     max-width: 550px;
 }
-.brief .right{
+.brief .right3{
     max-width: 600px;
     
 }
-.brief .right p{
+.brief .right3 p{
     font-size: 1.6rem;
     margin: 0.8rem 0;
     color: #FFFFFF;
 }
-.brief .right ul li{
+.brief .right3 ul li{
    margin:5rem 0;
    text-align: left;
    font-size: large;
@@ -34,11 +34,11 @@
    color: pink;
 }
 
-.brief .right h1{
+.brief .right3 h1{
    
     font-size: 4rem;
 }
-.brief .right h3{
+.brief .right3 h3{
     font-size: 2rem;
     padding: 6px 0;
     color: #fff;
@@ -53,13 +53,13 @@ button span{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-/* .brief .left .btn{
+/* .brief .left3 .btn{
     display: flex;
     justify-content: space-between;
     padding: 0.5rem 0;
 }
 
-.brief .left .btn .btn-light{
+.brief .left3 .btn .btn-light{
     padding: 0.5rem 1rem;
 } */
 button .toeng {
@@ -74,7 +74,7 @@ button .toeng {
     display: inline;
   }
 
-  .left-img{
+  .left3-img{
     padding-top: 1rem;
   border-radius:"25px";
   text-align: center;
@@ -82,7 +82,7 @@ button .toeng {
     
 }
 
-.left .img-container{
+.left3 .img-container{
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
@@ -91,7 +91,7 @@ button .toeng {
 
 }
 
-.right h2{
+.right3 h2{
     color: #fff;
     text-align: center;
 
@@ -109,28 +109,28 @@ button .toeng {
 }
 
 
-/* .right .top{
+/* .right3 .top{
     grid-column:1/span 8 ;
     grid-row: 1;
     padding-top: 20%;
     z-index: 6;
 } */
 
-.left .bottom{
+.left3 .bottom{
     grid-column:4/ -1 ;
     grid-row: 1;
     z-index: 5;
 }
 @media screen and (max-width:740px){
-    .img-stack{
+    /* .img-stack{
         display: none;
     
-    }
-    .brief .left p{
+    } */
+    .brief .left3 p{
         font-size: 1.2rem;
        
     }
-    .brief .left h1{
+    .brief .left3 h1{
         font-size: 3rem;
     }
 

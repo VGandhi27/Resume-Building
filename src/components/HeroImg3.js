@@ -9,7 +9,7 @@ const HeroImg2 = () => {
     {/* <h1>Features</h1> */}
     <div className="brief">
       
-      <div className="left">
+      <div className="left3">
       <div className="img-container">
           <div className="img-stack top">
             <img
@@ -21,7 +21,7 @@ const HeroImg2 = () => {
           </div>
         </div>
       </div>
-      <div className="right">
+      <div className="right3">
         <h1>Customize with </h1>
         <h1> templates and  </h1>
         <h1>themes</h1>
