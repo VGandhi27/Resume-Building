@@ -122,10 +122,10 @@ button .toeng {
     z-index: 5;
 }
 @media screen and (max-width:740px){
-    .img-stack{
+    /* .img-stack{
         display: none;
     
-    }
+    } */
     .brief .left p{
         font-size: 1.2rem;
        
