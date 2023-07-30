@@ -1,31 +1,28 @@
-.brief{
+/* .brief{
     width:90%;
-    margin: 2rem 0;
+    margin: 0%;
+    padding: 0%;
+    top: 0%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
     flex-wrap: wrap;
     height: 100%;
    
-    /* background-color: rgb(10, 139, 64); */
-
-}  
+}   */
 
 .brief .left3{
     text-align: left;
-    margin: auto;
-    padding: 5rem;
-    max-width: 550px;
+    padding-left: 0rem;
+    margin: 0.5rem;
+    max-width: 700px;
 }
 .brief .right3{
-    max-width: 600px;
+    max-width: 450px;
+    text-align: center;
+    align-items: center;
     
 }
-.brief .right3 p{
-    font-size: 1.6rem;
-    margin: 0.8rem 0;
-    color: #FFFFFF;
-}
+
 .brief .right3 ul li{
    margin:5rem 0;
    text-align: left;
@@ -36,16 +33,12 @@
 
 .brief .right3 h1{
    
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .brief .right3 h3{
     font-size: 2rem;
     padding: 6px 0;
     color: #fff;
-}
-button span{
-    color: #fff;
-    font-size: 1.8rem;
 }
 
 .brief button{
@@ -53,28 +46,8 @@ button span{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-/* .brief .left3 .btn{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-}
 
-.brief .left3 .btn .btn-light{
-    padding: 0.5rem 1rem;
-} */
-button .toeng {
-    display: none;
-  }
-  
-  button:hover .translate {
-    display: none;
-  }
-  
-  button:hover .toeng {
-    display: inline;
-  }
-
-  .left3-img{
+  /* .left3-img{
     padding-top: 1rem;
   border-radius:"25px";
   text-align: center;
@@ -86,10 +59,9 @@ button .toeng {
     display: grid;
     grid-template-columns: 1fr;
     position: relative;
-    align-items: center;
-    text-align: center;
-
-}
+    align-items: left;
+    
+} */
 
 .right3 h2{
     color: #fff;
@@ -98,39 +70,27 @@ button .toeng {
 }
  .top img{
    
-    margin: 4rem 10%;
+    margin: 2rem 10%;
     border: 1px solid #333;
     border-radius:25%;
-    text-align: center;
-    align-items: center;
-    max-width: 90%;
-    height: 90%;
+    
+    align-items: left;
+    max-width: 80%;
+    height: 80%;
 
 }
 
 
-/* .right3 .top{
-    grid-column:1/span 8 ;
-    grid-row: 1;
-    padding-top: 20%;
-    z-index: 6;
-} */
-
-.left3 .bottom{
-    grid-column:4/ -1 ;
-    grid-row: 1;
-    z-index: 5;
-}
 @media screen and (max-width:740px){
     /* .img-stack{
         display: none;
     
     } */
-    .brief .left3 p{
+    .brief .right3 p{
         font-size: 1.2rem;
        
     }
-    .brief .left3 h1{
+    .brief .right3 h1{
         font-size: 3rem;
     }
 

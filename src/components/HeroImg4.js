@@ -1,4 +1,4 @@
-import "./HeroImg2Style.css";
+import "./HeroImg4Style.css";
 import React from "react";
 
 import slice2 from "../assets/Other 17.png"
@@ -6,14 +6,14 @@ import slice2 from "../assets/Other 17.png"
 const HeroImg4 = () => {
   return (
     <div className="brief">
-      <div className="left">
+      <div className="left4">
         <h3>FEATURES</h3>
         <h1>Simple interface </h1>
         <h1>That helps you build  </h1>
         <h1>Quickly</h1>
        
       </div>
-      <div className="right">
+      <div className="right4">
       <div className="img-container">
           <div className="img-stack top">
             <img
