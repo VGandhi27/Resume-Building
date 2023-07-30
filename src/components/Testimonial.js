@@ -1,51 +1,50 @@
 import "./Testimonial.css"
 
 import React from 'react'
-import { Link } from "react-router-dom"
-
+import slice4 from "../assets/sl3.avif"
 const Testimonial = () => {
   return (
     <>
+    <div className="intro">
+           <h2>Testimonial</h2> 
+           <h1>
+           Ready What Others Have To Say
+            </h1>  
+            
+    </div>
           <div className="pricing">
+                       
       <div className="card-container">
         <div className="card">
-            <h3>-Basic-</h3>
+           
             <span className="bar">
-                <p className="btc">$100</p>
-                <p>-3 days-</p>
-                <p>-3 pages-</p>
-                <p>-Featured-</p>
-                <p>-Responsive Design-</p>
-                <Link to="/contact" className="btn">
-                    PURCHASE NOW</Link> 
+                <img src={slice4} alt="" />
+                <h3>OLIVIA COLE</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eos quidem aspernatur eveniet quisquam sapiente incidunt possimus in numquam voluptate. Eum commodi minus eius blanditiis vero quod saepe? Explicabo, ratione.</p>
+                
             </span>
         </div>
 
         <div className="card">
-            <h3>-Premium-</h3>
+           
             <span className="bar">
-                <p className="btc">$200</p>
-                <p>-2 days-</p>
-                <p>-5 pages-</p>
-                <p>-Featured-</p>
-                <p>-Responsive Design-</p>
-                <Link to="/contact" className="btn">
-                    PURCHASE NOW</Link> 
+                <img src={slice4} alt="" />
+                <h3>OLIVIA COLE</h3>
+                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eos quidem aspernatur eveniet quisquam sapiente incidunt possimus in numquam voluptate. Eum commodi minus eius blanditiis vero quod saepe? Explicabo, ratione.</p>
+                
             </span>
         </div>
 
+       
         <div className="card">
-            <h3>-Business-</h3>
-            <span className="bar">
-                <p className="btc">$300</p>
-                <p>-5 days-</p>
-                <p>-8 pages-</p>
-                <p>-Featured-</p>
-                <p>-Responsive Design-</p>
-                <Link to="/contact" className="btn">
-                    PURCHASE NOW</Link> 
-            </span>
-        </div>
+           
+           <span className="bar">
+               <img src={slice4} alt="" />
+               <h3>OLIVIA COLE</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident eos quidem aspernatur eveniet quisquam sapiente incidunt possimus in numquam voluptate. Eum commodi minus eius blanditiis vero quod saepe? Explicabo, ratione.</p>
+               
+           </span>
+       </div>
       </div>
     </div>
     </>

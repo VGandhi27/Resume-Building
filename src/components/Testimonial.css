@@ -2,7 +2,22 @@
     width: 100%;
     padding: 6rem 1rem;
 }
-
+.intro{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns:  1fr;
+    grid-gap:40px;
+}
+.intro h1{
+    text-align: center;
+    margin-bottom: 0;
+    bottom: 0%;
+}
+.intro h2{
+    text-align: center;
+    color: #eee;
+}
 .card-container{
     max-width: 1140px;
     margin: auto;
@@ -15,6 +30,7 @@
     color: #eee;
     text-align: center;
     padding: 1rem;
+    background-color: #191854;
 }
 
 .card:hover{
@@ -26,8 +42,10 @@
     padding: 10px 0;
 }
 
-.card p{
+.bar p{
     padding: 1rem;
+    justify-content: center;
+    text-align: center;
 }
 
 .bar{
@@ -35,6 +53,16 @@
     /* width: 60%; */
     margin: 1.5rem auto;
     display: block;
+}
+.bar img{
+    margin: -1rem ;
+    border: 1px solid #333;
+    border-radius:100%;
+    text-align: center;
+    align-items: center;
+    max-width: 30%;
+    height: 30%;
+
 }
 
 .btc{
