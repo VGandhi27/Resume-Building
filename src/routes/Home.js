@@ -6,6 +6,8 @@ import HeroImg4 from '../components/HeroImg4'
 import HeroImg5 from '../components/HeroImg5'
 import Features from '../components/Features'
 import Testimonial from '../components/Testimonial'
+import Footer from '../components/Footer'
+
 
 const Home = () => {
   return (
@@ -17,6 +19,7 @@ const Home = () => {
        <HeroImg4/>
        <Testimonial/>
        <HeroImg5/>
+       <Footer/>
     </div>
   )
 }
