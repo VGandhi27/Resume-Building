@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import HeroImg2 from '../components/HeroImg2'
 import HeroImg3 from '../components/HeroImg3'
 import HeroImg4 from '../components/HeroImg4'
+import HeroImg5 from '../components/HeroImg5'
 import Features from '../components/Features'
 import Testimonial from '../components/Testimonial'
 
@@ -15,6 +16,7 @@ const Home = () => {
        <HeroImg3/>
        <HeroImg4/>
        <Testimonial/>
+       <HeroImg5/>
     </div>
   )
 }

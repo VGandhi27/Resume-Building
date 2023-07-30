@@ -1,0 +1,108 @@
+.hero1-img23{
+   
+        width:80%;
+        margin: 10%;
+        padding: 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 100%;
+        min-height: 500px;
+        background-size: cover;
+        background:rgba(45, 219, 219, 1);
+        /* background: rgb(2,0,36); */
+        background-image: linear-gradient(to right top, #2058ac, #2c5aae, #365bb0, #3f5db1, #475fb3);    
+    /* 
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    min-height: 500px;
+    background-size: cover;
+    position: relative; */
+}
+.hero1-img::before{
+   
+    content:"" ;
+    /* background: url("../assets/hero.jpg"); */
+    background-color: #AAD9D9;
+    /* background: url("https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif") no-repeat center ; */
+    background-size: cover;
+    background-position: center top;
+    height: 50vh;
+    width: 100%;
+    min-height: 50px;
+    background-size: cover;
+    position: absolute;
+    min-width: inherit;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1{
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+.heading h3{
+    font-size: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.heading p{
+    font-size: 3rem;
+    text-align: center;
+    margin: 3%;
+}
+.heading .btn{
+    margin: 5%;
+    border-radius: 5%;
+    /* padding: 2rem; */
+    width: 25%;
+    text-align: center;
+    font-size: large;
+    background-color: #000000;
+    color: #fff;
+}
+
+@media screen and (max-width:640px)  {
+    .hero1-img h1{
+        font-size: 2rem;
+    
+    }
+    .heading h1{
+        /* font-size: 0.5rem; */
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    
+    }
+    .heading h1 strong{
+        font-size: 0.9rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    
+    }
+    
+    .heading p{
+        font-size: 2rem;
+       
+    }
+
+   
+    
+    
+}
