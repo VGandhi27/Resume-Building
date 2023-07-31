@@ -12,7 +12,7 @@ const HeroImg2 = () => {
         <h1>effective</h1>
         <h1> Resume</h1>
         <p>The most easiest way of building resume</p>
-        <a href=" k" className="btn btn-light" style={{span:"2rem"}}>Login/SignUp</a>
+        <a href="/signin" className="btn btn-light" style={{span:"2rem"}}>Login/SignUp</a>
         <a href=" k" className="btn">Create Resume</a>
 
         
