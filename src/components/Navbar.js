@@ -48,7 +48,7 @@ const Navbar = () => {
           <Link to="/blog"> <a href=""><FaGithub size={30} style={{color:"#fff"}} /></a> </Link>
           </li>
           <li>
-          <Link to="/Login"> Login </Link>
+          <Link to="/signin"> Login </Link>
           </li>
           
         </ul>
