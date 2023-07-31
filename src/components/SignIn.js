@@ -1,33 +1,166 @@
-import "./SignInStyle.css"
-import React from 'react'
-import Navbar from '../components/Navbar'
-import {Link,Outlet} from 'react-router-dom'
+// import "./SignInStyle.css"
+// import React , {useState} from 'react'
+// import Navbar from '../components/Navbar'
+// import {Link,Outlet} from 'react-router-dom'
+// import M from 'materialize-css'
+// import {useNavigate} from 'react-router-dom'
 
 
-const Form = () => {
-    
+// const Form = () => {
+//   const [password, setPassword] = useState("")
+//   const [email, setEmail] = useState("")
+//   let navigate =useNavigate();
   
-  return (
-    <>
-    <Navbar/>
-    <div className="form">
-      <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
-        <form >
+//   const PostData =()=>{
+//     if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
+//      M.toast({html: "Invalid Email", classes:"#d32f2f red darken-2"})
+//      return
+//     }  
+//     fetch("/signin",{
+//       method:"post",
+//       headers:{
+//         "Content-Type":"application/json"
+//       },
+//       body:JSON.stringify({
+       
+//         password,
+//         email
+//       })
+//     }).then(res=>res.json())
+//     .then(data=>{
+//       console.log(data)
+//      if(data.error){
+//       // M.toast({html: data.error, classes:"#d32f2f red darken-2"})
+//       alert("Your file is being uploaded!")
+//       console.log(data.error)
+//       }else{
+//       M.toast({html: "Signed In success", classes:"#43a047 green darken-1"})
+//       alert("Signed In success")
+//       navigate("/dashboard");
+//     }
+//     }).catch(err=>{
+//       console.log(err) 
+//     })
+  
+//   }
+  
+  
+//   return (
+//     <>
+//     <Navbar/>
+//     <div className="form">
+//       <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
+//         <form >
             
 
-            <label htmlFor="">Email</label>
-            <input type="email" id="email" name="email"/>
+//             <label htmlFor="">Email</label>
+//             <input type="email" id="email" name="email"  onChange={(e)=>setEmail(e.target.value)}/>
            
-            <label htmlFor="">Password</label>
-            <input type="password" id="password" name="password"/>
+//             <label htmlFor="">Password</label>
+//             <input type="password" id="password" name="password" onChange={(e)=>setPassword(e.target.value)}/>
            
-                         <button className="btn" type="submit"> Sign In </button>
+//                          <button className="btn" type="submit" onClick={()=>PostData()} > Sign In </button>
 
-                       <h1 className="register"><Link to='/signup'>Don't have an Account?</Link></h1>  
-        </form>
+//                        <h1 className="register"><Link to='/signup'>Don't have an Account?</Link></h1>  
+//         </form>
+//     </div>
+//     </>
+//   )
+// }
+
+// export default Form 
+
+import "./SignIn2Style.css"
+import React,{useState} from 'react'
+import {Link } from 'react-router-dom'
+import Navbar from '../components/Navbar'
+import M from 'materialize-css'
+import {useNavigate} from 'react-router-dom'
+
+const SignIn=()=>  {
+const [password, setPassword] = useState("")
+const [email, setEmail] = useState("")
+let navigate =useNavigate();
+
+const PostData =()=>{
+  if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)){
+   M.toast({html: "Invalid Email", classes:"#d32f2f red darken-2"})
+   return
+  }  
+  fetch("http://localhost:3000/signin",{
+    method:"post",
+    headers:{
+      "Content-Type":"application/json"
+    },
+    body:JSON.stringify({
+     
+      password,
+      email
+    })
+  }).then(res=>res.json())
+  .then(data=>{
+    console.log(data)
+   if(data.error){
+    M.toast({html: data.error, classes:"#d32f2f red darken-2"})
+    }else{
+    M.toast({html: "Signed In success", classes:"#43a047 green darken-1"})
+    navigate("/");
+  }
+  }).catch(err=>{
+    console.log(err) 
+  })
+
+}
+
+  return (
+    <>
+    <div className="form">
+     <div className="card auth-card input-field ">
+     <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
+
+     <label htmlFor="">Email</label>
+        <input type="text" placeholder="email" 
+         value={email}
+         onChange={(e)=>setEmail(e.target.value)}/>
+
+<label htmlFor="">Password</label>
+        <input type="text" placeholder="password"
+         value={password}
+         onChange={(e)=>setPassword(e.target.value)} />
+        <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
+        onClick={()=>PostData()}
+        >SignIn
+        </button>
+        <h5><Link to="/signup">Don't have an Account ?</Link></h5>
+
+      </div>
+
     </div>
+
+<Navbar/>
+     {/* <div className="form">
+       <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
+         <form >
+            
+
+             <label htmlFor="">Email</label>
+             <input type="email" id="email" name="email"  value={email}
+         onChange={(e)=>setEmail(e.target.value)}/>
+
+           
+             <label htmlFor="">Password</label>
+             <input type="password" id="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
+           
+                          <button className="btn" type="submit" onClick={()=>PostData()} > Sign In </button>
+
+                        <h1 className="register"><Link to='/signup'>Don't have an Account?</Link></h1>  
+         </form>
+     </div> */}
     </>
+    
+
   )
 }
 
-export default Form 
+
+export default SignIn
