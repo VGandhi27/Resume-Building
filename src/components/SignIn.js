@@ -115,6 +115,7 @@ const PostData =()=>{
   return (
     <>
     <div className="form">
+      <div className="hero3">
      <div className="card auth-card input-field ">
      <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
 
@@ -131,8 +132,9 @@ const PostData =()=>{
         onClick={()=>PostData()}
         >SignIn
         </button>
-        <h5><Link to="/signup">Don't have an Account ?</Link></h5>
+        <h1 className="register"><Link to="/signup">Don't have an Account ?</Link></h1>
 
+      </div>
       </div>
 
     </div>
