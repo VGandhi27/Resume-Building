@@ -31,13 +31,16 @@ const PostData =()=>{
   .then(data=>{
    if(data.error){
     M.toast({html: data.error, classes:"#d32f2f red darken-2"})
+    alert(data.error,'Already existed');
     }else{
     M.toast({html: data.message, classes:"#43a047 green darken-1"})
     navigate("/signin");
     console.log(data)
+    alert('successfully SignUp');
   }
   }).catch(err=>{
     console.log(err) 
+    alert(err,'Please add valid credentials');
   })
 
 }

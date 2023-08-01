@@ -29,9 +29,9 @@ const PostData =()=>{
   .then(data=>{
     console.log(data)
    if(data.error){
-    M.toast({html: data.error, classes:"#d32f2f red darken-2"})
+    alert( data.error)
     }else{
-    M.toast({html: "Signed In success", classes:"#43a047 green darken-1"})
+    alert( "Signed In success");
     navigate("/");
   }
   }).catch(err=>{
@@ -53,7 +53,7 @@ const PostData =()=>{
          onChange={(e)=>setEmail(e.target.value)}/>
 
 <label htmlFor="">Password</label>
-        <input type="text" placeholder="password"
+        <input type="password" placeholder="password"
          value={password}
          onChange={(e)=>setPassword(e.target.value)} />
         <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
@@ -68,24 +68,7 @@ const PostData =()=>{
     </div>
 
 <Navbar/>
-     {/* <div className="form">
-       <h1 style={{textAlign:'center', fontSize:"3rem",padding:"1rem 1rem"}}>Resume Builder</h1>
-         <form >
-            
-
-             <label htmlFor="">Email</label>
-             <input type="email" id="email" name="email"  value={email}
-         onChange={(e)=>setEmail(e.target.value)}/>
-
-           
-             <label htmlFor="">Password</label>
-             <input type="password" id="password" name="password" value={password} onChange={(e)=>setPassword(e.target.value)}/>
-           
-                          <button className="btn" type="submit" onClick={()=>PostData()} > Sign In </button>
-
-                        <h1 className="register"><Link to='/signup'>Don't have an Account?</Link></h1>  
-         </form>
-     </div> */}
+    
     </>
     
 

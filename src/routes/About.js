@@ -1,8 +1,14 @@
 import React from 'react'
 
 const About = () => {
+  const myFunction=()=> {
+    alert("Hello! I am an alert box!");
+  }
   return (
-    <div>About</div>
+    <>About
+      <button  onClick={()=>myFunction()}>Try it</button>
+    </>
+    
   )
 }
 
