@@ -33,22 +33,19 @@ const Navbar = () => {
           <Link to="/"> Home </Link>
           </li>
           <li>
-          <Link to="/about"> About </Link>
-          </li>
-          <li>
-          <Link to="/project"> Price </Link>
+          <Link to="/Profile"> About </Link>
           </li>
           <li>
           <Link to="/contact"> Contact </Link>
           </li>
-          {/* <li>
-          <Link to="/timelines"> Timelines </Link>
-          </li> */}
           <li>
-          <Link to="/blog"> <a href=""><FaGithub size={30} style={{color:"#fff"}} /></a> </Link>
+          <Link to="https://github.com/VGandhi27/Resume-Building" > <FaGithub size={30} style={{color:"#fff"}} /> </Link>
           </li>
           <li>
           <Link to="/signin"> Login </Link>
+          </li>
+          <li>
+          <Link to="/signup"> Register </Link>
           </li>
           
         </ul>
