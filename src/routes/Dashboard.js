@@ -7,13 +7,16 @@ import Work from '../components/Work'
 import Activities from '../components/Activities'
 import Volunteering from '../components/Volunteering'
 import Awards from '../components/Awards'
+import Editable from '../components/Editable'
+
 
 
 const Dashboard = () => {
   return (
     <>
     <Navbar/>
-    {/* <Per_Info/> */}
+    <Editable/>
+    <Per_Info/>
     <Skills_Expertise/>
     <Education/>
     <Work/>
