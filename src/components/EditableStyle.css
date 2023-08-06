@@ -3,8 +3,8 @@
     flex-direction: column;
     padding: 2rem 2rem;
     margin-left:1rem ;
-    max-width: 750px;
-    min-width: 750px;
+    max-width: 1050px;
+    min-width: 800px;
     background-color: rgb(255, 255, 255);
     color: black;
     float: right;
@@ -24,4 +24,60 @@
 }
 .h3{
     font-size:xx-small;
+}
+.intro_name{
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.title h5{
+    padding:0 1rem;
+    display: inline-grid;
+}
+.briefing1{
+    width:90%;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.briefing1 .left5{
+    text-align: left;
+    /* margin: auto; */
+    padding: 1rem;
+    margin-right: 1.5rem;
+    max-width: 290px;
+}
+.briefing1 .right5{
+    text-align: left;
+    /* margin-left: 1rem; */
+    /* padding: 1rem; */
+    max-width: 321px;
+    float: right;
+    
+}
+.briefing1 .right5 p{
+    font-size: 1.6rem;
+    margin: 0.8rem 0;
+    color: #FFFFFF;
+}
+.briefing1 .right5 ul li{
+   margin:5rem 0;
+   text-align: left;
+   font-size: large;
+   list-style: disc;
+   color: pink;
+}
+
+.briefing1 .left5 h1{
+   
+    font-size: 1rem;
+}
+.briefing1 .left5 h3{
+    font-size: 2rem;
+    padding: 6px 0;
+    color: #fff;
 }
