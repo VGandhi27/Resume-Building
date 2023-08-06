@@ -15,6 +15,13 @@
      margin-bottom: 6rem;
 }
 
+.header .header-bg h1 ,h4 ,p,
+a{
+ color:#fff;
+ text-decoration: none;
+}
+  
+
 .nav-menu{  
  display:flex;
  }

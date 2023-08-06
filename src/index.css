@@ -18,12 +18,12 @@ body{
 .space{
   background-image: var(--section-background-image);
 }
-h1 ,h4 ,p,
+/* h1 ,h4 ,p,
 a{
  color:#fff;
  text-decoration: none;
 }
-  
+   */
 ul{
 list-style-type: none;
 }
