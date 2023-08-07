@@ -112,6 +112,21 @@ button .toeng {
     grid-row: 1;
     z-index: 5;
 }
+
+.left4 h1{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:740px){
     /* .img-stack{
         display: none;
