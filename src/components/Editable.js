@@ -28,11 +28,69 @@ const editable = () => {
           <h5>Company 1</h5>
           <h5>Senior Software Developer</h5>
           <h6>Apr 2021 - present</h6>
-          {/* <ul>
+          <ul type='disc'>
             <li>
+            Use my extensive experience with front end development to define the structure and components for the project, making sure they are reusable
+           </li>
+           <li>
+           Keep the code quality high reviewing code from other developers and suggesting improvements </li>
+           <li>Interact with the designer to suggest changes and to make sure the view he has about the design is translated into actual functionality
+           </li>
+           <li>
+           E-commerce maintenance with Fastcommerce, a Brazilian e-commerce platform
 
-            </li>
-          </ul> */}
+           </li>
+          </ul>
+          <h5>Company 1</h5>
+          <h5>Senior Software Developer</h5>
+          <h6>Apr 2021 - present</h6>
+          <ul type='disc'>
+            <li>
+            Use my extensive experience with front end development to define the structure and components for the project, making sure they are reusable
+           </li>
+           <li>
+           Keep the code quality high reviewing code from other developers and suggesting improvements </li>
+           <li>Interact with the designer to suggest changes and to make sure the view he has about the design is translated into actual functionality
+           </li>
+           <li>
+           E-commerce maintenance with Fastcommerce, a Brazilian e-commerce platform
+
+           </li>
+          </ul>
+          <h5>Company 1</h5>
+          <h5>Senior Software Developer</h5>
+          <h6>Apr 2021 - present</h6>
+          <ul type='disc'>
+            <li>
+            Use my extensive experience with front end development to define the structure and components for the project, making sure they are reusable
+           </li>
+           <li>
+           Keep the code quality high reviewing code from other developers and suggesting improvements </li>
+           <li>Interact with the designer to suggest changes and to make sure the view he has about the design is translated into actual functionality
+           </li>
+           <li>
+           E-commerce maintenance with Fastcommerce, a Brazilian e-commerce platform
+
+           </li>
+          </ul>
+        </section>
+        <section className="awards">
+        <h1>Awards</h1>
+        <hr />
+        <ul>
+          <li>
+          <h5>  Certificate of exceptional bug finder</h5>
+          <h5> XYZ client   Nov 2014</h5>
+          <h6> Recognition zero defect delivery</h6>
+           </li>
+           <li>
+           <h5>  Certificate of exceptional bug finder</h5>
+           <h5> XYZ client   Nov 2014</h5>
+           <h6> Recognition zero defect delivery</h6>
+           </li>
+          
+        </ul>
+        
         </section>
 
           </div>

@@ -1,6 +1,6 @@
 import "./HeroImg2Style.css";
 import React from "react";
-
+import {Link } from 'react-router-dom';
 import slice from "../assets/Slice1.png"
 
 const HeroImg2 = () => {
@@ -12,8 +12,8 @@ const HeroImg2 = () => {
         <h1>effective</h1>
         <h1> Resume</h1>
         <p>The most easiest way of building resume</p>
-        <a href="/signin" className="btn btn-light" style={{span:"2rem"}}>Login/SignUp</a>
-        <a href=" k" className="btn">Create Resume</a>
+        <Link to="/signin" className="btn btn-light" style={{span:"2rem"}}>Login/SignUp</Link>
+        <Link to="/dashboard" className="btn">Create Resume</Link>
 
         
       </div>
