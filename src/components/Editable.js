@@ -95,10 +95,49 @@ const editable = () => {
 
           </div>
           <div className="right5">
-          <section className="summary">
+          <section className="objective">
           <h1>Objective </h1>
           <hr />
-          Eager to expand my skill set through external trainings to help boost all major front desk KPIs. Hoping to leverage organizational skills to help ABC Corp introduce time-saving schemes for all executives.        </section>
+          Eager to expand my skill set through external trainings to help boost all major front desk KPIs. Hoping to leverage organizational skills to help ABC Corp introduce time-saving schemes for all executives.       
+           </section>
+           <section className="language">
+          <h1>Language </h1>
+          <hr />
+         <ul className='language'>
+          <li> JavaScript</li>
+          <li>HTML5</li>
+          <li>CSS</li>
+         </ul>
+           </section>
+           <section className="technologies">
+          <h1>Technologies </h1>
+          <hr />
+         <ul className='language'>
+          <li> SQL</li>
+          <li>Progressive Web Apps</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+         </ul>
+           </section>
+           <section className="frameworks">
+          <h1>Frameworks </h1>
+          <hr />
+         <ul className='language'>
+          <li> React</li>
+          <li>Angular</li>
+         </ul>
+           </section>
+           <section className="tools">
+          <h1>Tools </h1>
+          <hr />
+         <ul className='language'>
+          <li> Git</li>
+          <li>VSCode</li>
+          <li>Jira</li>
+          <li>Webpack</li>
+          <li>Eclipse</li>
+         </ul>
+           </section>
 
           </div>
         </main>

@@ -69,7 +69,8 @@
    text-align: left;
    font-size: large;
    list-style: disc;
-   color: pink;
+   color: black;
+   margin-right: 1rem;
 }
 
 .briefing1 .left5 h1{
@@ -86,4 +87,9 @@
 }
 .summary{
     font-size:small ;
+}
+.language li{
+    display: inline;
+    padding:10px ;
+    margin-right: 1 rem;
 }
