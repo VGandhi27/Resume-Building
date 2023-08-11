@@ -135,10 +135,39 @@ const editable = () => {
           <li>VSCode</li>
           <li>Jira</li>
           <li>Webpack</li>
-          <li>Eclipse</li>
+          
          </ul>
            </section>
-
+           <section className="education">
+          <h1>Education</h1>
+          <hr />
+          <div className="education">
+          <h4>MS - Cloud technology</h4>
+          <h5>MIT, University</h5>
+          <h5>Jan 2014 -Jan 2016</h5>
+          </div>
+          <div className="education">
+          <h4>B.Tech (VTU) - Computer Science</h4>
+          <h5>NMAMIT, Nitte</h5>
+          <h5>Jan 2010 -Jan 2014</h5>
+          </div>
+           
+        </section>
+        <section className="voluntary">
+          <h1>Voluntary</h1>
+          <hr />
+          <div className="voluntary">
+          <h4>MS - Cloud technology</h4>
+          <h5>MIT, University</h5>
+          <h5>Jan 2014 -Jan 2016</h5>
+          </div>
+          <div className="Voluntary">
+          <h4>B.Tech (VTU) - Computer Science</h4>
+          <h5>NMAMIT, Nitte</h5>
+          <h5>Jan 2010 -Jan 2014</h5>
+          </div>
+           
+        </section>
           </div>
         </main>
        

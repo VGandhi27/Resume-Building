@@ -49,13 +49,15 @@
     /* margin: auto; */
     padding: 1rem;
     margin-right: 1.5rem;
-    max-width: 290px;
+    /* max-width: 290px; */
+    max-width: 321px;
 }
 .briefing1 .right5{
     text-align: left;
     /* margin-left: 1rem; */
     /* padding: 1rem; */
-    max-width: 321px;
+    /* max-width: 321px; */
+    max-width: 290px;
     float: right;
     
 }
@@ -75,7 +77,7 @@
 
 .briefing1 .left5 h1{
    
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 .briefing1 .left5 h3{
     font-size: 2rem;
@@ -92,4 +94,23 @@
     display: inline;
     padding:10px ;
     margin-right: 1 rem;
+}
+.education h4{
+    color: black;
+    font-style: normal;
+    font-size: large;
+}
+.voluntary h4{
+    color: black;
+    font-style: normal;
+    font-size: large;
+}
+.voluntary{
+    padding: 10px 10px;
+}
+.briefing1 .right5 section{
+    padding: 10px 10px;    
+}
+.briefing1 .left5 section{
+    padding: 20px 10px;    
 }
