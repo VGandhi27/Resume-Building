@@ -7,8 +7,8 @@ const editable = () => {
     <>
      <div className="edit-resume">
       <section className="title" >
-        <h1 className='intro_name'>Vidushi Gandhi</h1>
-        <h3>Developer</h3>
+        <main className='intro_name'>Vidushi Gandhi</main>
+        <h3 className='desc'>Developer</h3>
         <p>
           <h5 className='titleDesc'>+918338838366</h5>
           <h5 className='titleDesc'>vgddhvd@sbjh.com</h5>
